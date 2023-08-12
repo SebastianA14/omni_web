@@ -1,0 +1,17 @@
+<!DOCTYPE html>  <!-- Tipo de archivo HTML -->
+<html>
+<head>    <!-- Sección que contiene información del encabezado de la página. -->
+    <title>Control de Carrito</title>   <!-- Título de la página -->
+    <link rel="stylesheet" type="text/css" href="style.css">   <!-- Enlace a una hoja de estilos externa -->
+</head>
+<body>    <!-- Inicio del cuerpo de la página -->
+    <h1>Control de Carrito</h1>  <!-- Encabezado principal -->
+
+    <form id="control-form" action="/control" method="post">  <!-- Formulario con identificador "control-form" y envío de datos mediante el método POST -->
+        <button type="submit" name="comando" value="adelante">Adelante</button>  <!-- Botón que envía el comando "adelante" -->
+        <button type="submit" name="comando" value="atrás">Atrás</button>  <!-- Botón que envía el comando "atrás" -->
+        <button type="submit" name="comando" value="izquierda">Izquierda</button>  <!-- Botón que envía el comando "izquierda" -->
+        <button type="submit" name="comando" value="derecha">Derecha</button>  <!-- Botón que envía el comando "derecha" -->
+    </form>
+</body>
+</html>

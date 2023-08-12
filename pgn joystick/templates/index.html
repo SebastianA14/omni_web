@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Control de Robot Omnidireccional</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <h1>Control Omnicarrito</h1>
+    <div id="joystick-container">
+        <div id="joystick-handle"></div>
+    </div>
+    <h2>Zonas de descarga de material</h2>
+    <div class="button-container">
+        <div class="button-group-2">
+            <button id="ZONEAButton" class="button button-color-a" data-direction=":ZONE:A;">ZONA A</button>
+            <button id="ZONEBButton" class="button button-color-b" data-direction=":ZONE:B;">ZONA B</button>
+            <button id="ZONECButton" class="button button-color-c" data-direction=":ZONE:C;">ZONA C</button>
+            <button id="ZONEDButton" class="button button-color-d" data-direction=":ZONE:D;">ZONA D</button>
+        </div>
+    </div>
+    <h2>Zona de pin de carga eléctrica</h2>
+    <div class="button-container">
+        <div class="button-group-3">
+            <button id="CARGAButton" class="button button-color-e" data-direction=":CARGA:E;">ZONA CARGA</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Aquí va el código JavaScript
+    </script>
+</body>
+</html>

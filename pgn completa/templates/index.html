@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Control de Robot Omnidirecional</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <h1>Control Omnicarrito</h1>
+    <div class="button-container">
+        <div class="button-group-1">
+            <button id="LIButton" class="button" data-direction=":move:LF;">LF</button>
+            <button id="UPButton" class="button" data-direction=":move:FORWARD;">Forward</button>
+            <button id="LBButton" class="button" data-direction=":move:RF;">RF</button>
+        </div>
+        <div class="button-group-1">
+            <button id="LEFTButton" class="button" data-direction=":move:LEFT;">Left</button>
+            <button id="STOPButton" class="button" data-direction=":move:STOP;">Stop</button>
+            <button id="RIGHTButton" class="button" data-direction=":move:RIGHT;">Right</button>
+        </div>
+        <div class="button-group-1">
+            <button id="RIButton" class="button" data-direction=":move:LB;">LB</button>
+            <button id="DOWNButton" class="button" data-direction=":move:DOWN;">Backward</button>
+            <button id="RBButton" class="button" data-direction=":move:RB;">RB</button>
+        </div>
+        <div class="button-group-1">
+            <button id="CARGAButton" class="button" data-direction=":ROTATE:CCW;">CCW</button>
+            <button id="CARGAButton" class="button" data-direction=":ROTATE:CW;">CW</button>
+        </div>
+    </div>
+    <h2>Zonas de descarga de material</h2>
+    <div class="button-container">
+        <div class="button-group-2">
+            <button id="ZONEAButton" class="button" data-direction=":ZONE:A;">ZONA A</button>
+            <button id="ZONEBButton" class="button" data-direction=":ZONE:B;">ZONA B</button>
+            <button id="ZONECButton" class="button" data-direction=":ZONE:C;">ZONA C</button>
+            <button id="ZONEDButton" class="button" data-direction=":ZONE:D;">ZONA D</button>
+        </div>
+    </div>
+    <h2>Zona de pin de carga eléctrica</h2>
+    <div class="button-container">
+        <div class="button-group-3">
+            <button id="CARGAButton" class="button" data-direction=":CARGA:E;">ZONA CARGA</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
